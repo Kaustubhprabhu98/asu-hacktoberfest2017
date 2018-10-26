@@ -37,6 +37,19 @@ try:
         print "quicksort incorrect."
 except:
     print "quicksort function errored or is incomplete."
+    
+try:
+    from countingSort import counting_Sort 
+    alist = [9,3,1,4,5,7,7,2,2]
+    sortedA = sorted(alist)
+    if(counting_sort(alist,0,10)) == sortedA):
+        print "countingSort success!"
+    else:
+        print "countingSort incorrect."
+except:
+    print "countingSort function errored or is incomplete."    
+    
+    
 
 try:
     from heap import heap
